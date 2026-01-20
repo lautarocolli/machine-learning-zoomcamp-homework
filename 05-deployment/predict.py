@@ -32,6 +32,3 @@ y_pred = model.predict_proba(X)[:, 1]
 
 print('Input', customer)
 print('Churn probability', y_pred)
-
-
-
