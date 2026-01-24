@@ -1,6 +1,7 @@
 import requests
 
-url = 'http://localhost:9696/predict'
+host = 'localhost:9696'
+url = f'http://{host}/predict'
 
 customer = {
     "gender": "female",
@@ -28,6 +29,8 @@ response = requests.post(url, json=customer).json()
 response
 
 if response['churn'] == True:
+    print("Response:", response)
     print("The customer will churn")
 else:
+    print("Response:", response)
     print("The customer will NOT churn")
