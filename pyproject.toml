@@ -1,7 +1,7 @@
 [project]
 name = "machine-learning-zoomcamp-homework"
 version = "0.1.0"
-description = "Add your description here"
+description = "venv for the machine learning zoomcamp coursework"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
