@@ -212,4 +212,5 @@ __marimo__/
 *.keras
 *.onnx
 *_savedmodel/
+*.data
 /home/lautivuelos/machine-learning-zoomcamp-homework/09-serverless/keras/models
