@@ -25,4 +25,5 @@ dependencies = [
 [tool.uv.workspace]
 members = [
     "09-serverless/sklearn/train",
+    "10-kubernetes",
 ]

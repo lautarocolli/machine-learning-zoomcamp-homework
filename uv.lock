@@ -15,9 +15,21 @@ resolution-markers = [
 
 [manifest]
 members = [
+    "10-kubernetes",
     "machine-learning-zoomcamp-homework",
     "train",
 ]
+
+[[package]]
+name = "10-kubernetes"
+version = "0.1.0"
+source = { virtual = "10-kubernetes" }
+dependencies = [
+    { name = "scikit-learn" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "scikit-learn", specifier = ">=1.8.0" }]
 
 [[package]]
 name = "absl-py"
