@@ -2,7 +2,7 @@ import numpy as np
 import onnxruntime as ort
 from keras_image_helper import create_preprocessor
 from fastapi import FastAPI
-from pydantic import BaseModel, HttpUrl
+from pydantic import BaseModel, HttpUrl, Field
 import uvicorn
 
 app = FastAPI(title="clothing-classifier")
@@ -44,7 +44,10 @@ classes = [
 
 
 class PredictRequest(BaseModel):
-    url: HttpUrl
+    url: HttpUrl = Field(
+        ..., 
+        examples=["http://bit.ly/mlbookcamp-pants"]
+    )
 
 
 class PredictResponse(BaseModel):
