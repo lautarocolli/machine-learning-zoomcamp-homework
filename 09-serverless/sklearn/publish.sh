@@ -17,7 +17,8 @@ aws ecr get-login-password \
 
 echo "Building with classic Docker builder..."
 
-DOCKER_BUILDKIT=0 docker build \
+DOCKER_BUILDKIT=0 
+docker build \
   --platform linux/amd64 \
   -t ${REMOTE_IMAGE_TAG} \
   .
